@@ -7,8 +7,8 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 
 # Instructions to replicate these Results
 
-# Write up
-Please take a look at the repo
+# writeup.pdf
+Please take a look at the repo and read writeup.pdf
 
 # Opinion and Suggestions
 
