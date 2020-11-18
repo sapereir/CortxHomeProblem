@@ -5,7 +5,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 1. Create an AWS account.
 2. Under the All Services Section select EC2 under the compute section
 3. Click Launch Instance
-    a. Type Deep Learning AMI (Ubuntu 18.04) and select it
+    a. Type Deep Learning AMI (Ubuntu 18.04) and select it \\
     b. Then select t2.micro for setting up (change to g4dn.xlarge or p2.xlarge at a later time)
     c. Add 150 GiB of storage
     d. Create a .pem key and launch instance
