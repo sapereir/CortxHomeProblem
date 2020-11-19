@@ -19,7 +19,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 6. Clone the following repository
   a. git clone https://github.com/sapereir/CortxHomeProblem.git
   b. Assuming you have setup type: jupyter notebook into terminal 
-  c. Then run the entire jupyter notebook
+  c. Then run the necessary cells in jupyter notebook (commented)
 
 # F1 Score: Precision and Recall
 
