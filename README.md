@@ -29,7 +29,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
         iv. Click control-b + d to exit tmux window
         v. To reattch to window type tmux attach -t "name" into terminal
 
-# F1 Score: Precision and Recall
+# F1 Score with Precision and Recall
 
 # Instructions to replicate these Results
 
@@ -37,6 +37,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 Please take a look at the repo and read writeup.pdf
 
 # Opinion and Suggestions
+
 
 # Favorite Charity
 Link: https://www.10000degrees.org/
