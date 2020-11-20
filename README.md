@@ -16,10 +16,18 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
         i. Type lsblk into the terminal
         ii. sudo mkswap /dev/* (*volume name)
         iii. sudo swapon /dev/* (*volume name)
-6. Clone the following repository
-  a. git clone https://github.com/sapereir/CortxHomeProblem.git
-  b. Assuming you have setup type: jupyter notebook into terminal 
-  c. Then run the necessary cells in jupyter notebook (commented)
+6. Clone the following repository: git clone https://github.com/sapereir/CortxHomeProblem.git
+7. Download the necessary data and model from the following link: https://drive.google.com/drive/folders/17k8dXden_vkVhq5DX__ggZ-FbRpnIQxz?usp=sharing
+   Feel free to download the data directly from Google here: https://ai.google.com/research/NaturalQuestions/download; I used the simplified version but either could be used. However, the non-simplified version sometimes has a runtime error. Additionally, feel free to train the model directly instead of using my pre-trained models. You could use the following link to connect ec2-instance with google drive but the data is small enough to do directly: https://zapier.com/apps/amazon-ec2/integrations/google-drive
+8. Running the code:
+    a. Type jupyter notebook into the terminal
+    b. Change necessary cells (commented) or run cells.
+    c. Long term training
+        i. Type tmux new -s "name" into terminal 
+        ii. Type the following command into the terminal: jupyter nbconvert --to script *.ipynb (* file name)
+        iii. Type python *.py (* file name)
+        iv. Click control-b + d to exit tmux window
+        v. To reattch to window type tmux attach -t "name" into terminal
 
 # F1 Score: Precision and Recall
 
