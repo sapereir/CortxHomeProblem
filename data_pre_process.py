@@ -36,7 +36,8 @@ def convert_data(
     tokenizer: BertTokenizer,
     max_seq_len: int,
     max_question_len: int,
-    doc_stride: int
+    doc_stride: int,
+    val: bool
 ) -> List[Example]:
     """Convert dictionary data into list of training data.
 
@@ -62,7 +63,11 @@ def convert_data(
 
     # model input
     data = json.loads(line)
-    doc_words = data['document_html'].split()
+
+    if val:
+        doc_words = data['document_html'].split()
+    else:
+        doc_words = data['document_text'].split()
     question_tokens = tokenizer.tokenize(data['question_text'])[:max_question_len]
 
     # tokenized index of i-th original token corresponds to original_to_tokenized_index[i]
