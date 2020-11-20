@@ -39,3 +39,5 @@ Please take a look at the repo and read writeup.pdf
 # Opinion and Suggestions
 
 # Favorite Charity
+Link: https://www.10000degrees.org/
+10,000 Degrees helps students from low-income backgrounds get to and through college. 
