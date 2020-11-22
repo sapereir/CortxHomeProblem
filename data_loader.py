@@ -20,8 +20,7 @@ class Example(object):
     class_label: str
 
 class TextDataset(Dataset):
-    """Dataset for [TensorFlow 2.0 Question Answering](https://www.kaggle.com/c/tensorflow2-question-answering).
-    
+    """    
     Parameters
     ----------
     examples : list of Example
