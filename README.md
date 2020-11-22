@@ -9,7 +9,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
     b. Then select t2.micro for setting up (change to g4dn.xlarge or p2.xlarge at a later time)
     c. Add 150 GiB of storage
     d. Create a .pem key and launch instance
-4. In the Elastic Block Store section: Click Volumes and Create a SSD volume with 100 GiB of memory. Then click actions and attach to same volume. 
+4. In the Elastic Block Store section: Click Volumes and Create a SSD volume with 50 GiB of memory. Then click actions and attach to same volume. 
 5. Use Instance: 
     a. SSH using the following line: ssh -i *.pem -L 8000:localhost:8888 ubuntu@ec2-*.us-east-*.compute.amazonaws.com (* fill based on your instance)
     b. Add SWAP memory from the new volume attached.
