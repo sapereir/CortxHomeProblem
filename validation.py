@@ -18,7 +18,7 @@ from transformers import BertTokenizer
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from tqdm import tqdm_notebook as tqdm
+from tqdm import tqdm
 
 import torch
 from torch import nn, optim
