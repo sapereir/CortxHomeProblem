@@ -54,7 +54,7 @@ Trained on nq-train-00.jsonl.gz and nq-val-00.jsonl.gz. Just run all the cells b
 
 # Preliminary Model 2
 Trained on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz. This will require changing the input to convert_func to be val=False for training only as document_html 
-doesn't exist. This was trained for about 7 hours but the results were poor because document html exists in validation and lot of information was lost in training. 
+doesn't exist. This was trained for about 7 hours but the results were poor because document html exists in validation but not in training and thus lots of information was lost in training. 
 
 # Model 3; Final Model
 Just run all the cells in the jupyter notebook run.ipynb. This will run 6 training files and 1 validation file. The training took about 9 hours 
@@ -63,7 +63,7 @@ Just run all the cells in the jupyter notebook run.ipynb. This will run 6 traini
 Please take a look at the repo and read writeup.pdf
 
 # Opinion and Suggestions
-I really enjoyed the assignment because developing sufficient models that extract answers from entire page of content verus paragraphs is relatively a new problem in the field. I haven't dealt with something at this scale that needs to be robust. I learned a lot primarily from reading a lot of tensorflow code that can be translated to pytorch. Additionally, I learned how I effective I must be in having an efficient data pipeline. Laslty, it prompted me to gauge the improtance in distrbuted models. I love how that problem was open-ended and I didn't have to reimplement architechture based on a particular research paper. I don't have to many suggestions as this was open ended problem and that is the best aspect of it.
+I really enjoyed the assignment because developing sufficient models that extract answers from entire page of content verus paragraphs is relatively a new problem in the field. I haven't dealt with something at this scale that needs to be robust. I learned a lot primarily from reading a lot of tensorflow code that can be translated to pytorch. Additionally, I learned how I effective I must be in having an efficient data pipeline. Laslty, it prompted me to gauge the improtance in distrbuted models. I love how that problem was open-ended and I didn't have to reimplement architechture based on a particular research paper. I don't have to many suggestions as this was open ended problem and that is the best aspect of the project but I think a common problems people run into could be very useful as they are probably very similar. 
 
 # Favorite Charity
 Link: https://www.10000degrees.org/
