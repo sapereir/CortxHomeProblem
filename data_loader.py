@@ -19,9 +19,13 @@ class Example(object):
     end_position: int
     class_label: str
 
+"""
+Returns a smaller random example which was subset of the original example. The 
+intention behind it being random is that by looping through all the examples
+we know it forces the network to learn meaningful representations of data.
+"""
 class TextDataset(Dataset):
-    """Dataset for [TensorFlow 2.0 Question Answering](https://www.kaggle.com/c/tensorflow2-question-answering).
-    
+    """    
     Parameters
     ----------
     examples : list of Example
@@ -41,6 +45,12 @@ class TextDataset(Dataset):
             return random.choice(self.examples[index])
         return random.choice(annotated)
 
+
+"""
+Creates the inputs to the models which are the tokens, attention_mask, 
+token_type_ids, and the labels which are the start positions, end_positions, and
+labels and returns them in batch form.
+"""
 def collate_fn(examples: List[Example]) -> List[List[torch.Tensor]]:
     # input tokens
     max_len = max([len(example.input_ids) for example in examples])

@@ -30,7 +30,10 @@ class Example(object):
     end_position: int
     class_label: str
 
-        
+"""
+This function breaks down a big example into multiple smaller examples
+based on class of answer. Then takes chunks based on doc_stride in strides.
+"""
 def convert_data(
     line: str,
     tokenizer: BertTokenizer,
@@ -104,8 +107,11 @@ def convert_data(
 
     # convert into tokenized index
     if start_position != -1 and end_position != -1:
+      try:
         start_position = original_to_tokenized_index[start_position]
         end_position = original_to_tokenized_index[end_position]
+      except:
+        return []
 
     # make sure at least one object in `examples`
     examples = []
@@ -142,7 +148,15 @@ def convert_data(
         ))
     return examples
 
+
+"""
+Initializes data class that will later call convert_data using 4 threads. This
+is to improve performance instead of just doing this sequentially. 
+"""
 class JsonlReader(JsonReader):
+    """
+    JsonReader provides an interface for reading in a JSON file.
+    """
     def __init__(
         self,
         f: str,
@@ -161,5 +175,4 @@ class JsonlReader(JsonReader):
                 obj = p.map(self.convert_data, lines)
             return obj
 
-        self.close()
         raise StopIteration

@@ -7,6 +7,10 @@ from torch.utils.data import Dataset, Subset, DataLoader
 
 from transformers import BertTokenizer, AdamW, BertModel, get_linear_schedule_with_warmup, BertPreTrainedModel
 
+
+"""
+The architechture of the model is described in the writeup
+"""
 class BertForQuestionAnswering(BertPreTrainedModel):
     """BERT model for QA and classification tasks.
     
@@ -54,6 +58,10 @@ class BertForQuestionAnswering(BertPreTrainedModel):
 
         return start_logits, end_logits, classifier_logits
 
+"""
+Takes a sum of CrossEntropy of the start, end of the long answer and the class
+it belongs in.
+"""
 def loss_fn(preds, labels):
     start_preds, end_preds, class_preds = preds
     start_labels, end_labels, class_labels = labels
