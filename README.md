@@ -31,23 +31,20 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 
 # F1 Score with Precision and Recall
 
-# 1
-Train on part of nq-train-00.jsonl.gz and nq-val-00.jsonl.gz:
-    F1 Score: 2.0000
-    Precision: 2.4000
-    Recall: 1.7143
+# 1: Train on nq-train-00.jsonl.gz and nq-val-00.jsonl.gz
+F1 Score: 2.0000
+Precision: 2.4000
+Recall: 1.7143
 
-# 2
-Train on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz:
-    F1 Score: 1.4667
-    Precision: 1.3750
-    Recall: 1.5714
+# 2: Train on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz
+F1 Score: 1.4667
+Precision: 1.3750
+Recall: 1.5714
 
-# 3
-Train on nq-train-00-XX.jsonl.gz and nq-val-00.jsonl.gz:
-    F1 Score: 
-    Precision: 
-    Recall:
+# 3: Train on nq-train-00-XX.jsonl.gz and nq-val-00.jsonl.gz
+F1 Score: 
+Precision: 
+Recall:
     
 # Instructions to replicate these Results
 
