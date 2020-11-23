@@ -57,7 +57,7 @@ Trained on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz. This wil
 doesn't exist. This was trained for about 7 hours but the results were poor because document html exists in validation but not in training and thus lots of information was lost in training. 
 
 # Model 3; Final Model
-Just run all the cells in the jupyter notebook run.ipynb. This will run 6 training files and 1 validation file. The training took about 9 hours to complete. 
+Just run all the cells in the jupyter notebook run.ipynb. This will run 6 training files and 1 validation file. The training took about 9 hours to complete. Please take a look at the change in loss over each file too. 
 
 # Writeup
 Please take a look at the repo and read Cortx_Writeup.pdf
