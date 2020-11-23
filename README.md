@@ -42,9 +42,9 @@ Precision: 1.3750
 Recall: 1.5714
 
 # Model 3; Final Model
-F1 Score: 2.8000
-Precision: 4.6667
-Recall: 2.0000
+F1 Score: 3.0667
+Precision: 4.6000
+Recall: 2.3000
     
 # Instructions to replicate these Results
 All Hyperparameters are in run.ipynb and in the writeup. 
