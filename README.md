@@ -6,7 +6,7 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 2. Under the All Services Section select EC2 under the compute section
 3. Click Launch Instance
     a. Type Deep Learning AMI (Ubuntu 18.04) and select it 
-    b. Then select t2.micro for setting up (change to g4dn.xlarge or p2.xlarge at a later time)
+    b. Then select t2.micro for setting up (change to p2.xlarge at a later time)
     c. Add 150 GiB of storage
     d. Create a .pem key and launch instance
 4. In the Elastic Block Store section: Click Volumes and Create a SSD volume with 50 GiB of memory. Then click actions and attach to same volume. 
@@ -31,30 +31,39 @@ Cortx Take Home Problem: Created a deep learning model that can be trained and r
 
 # F1 Score with Precision and Recall
 
-# 1: Train on nq-train-00.jsonl.gz and nq-val-00.jsonl.gz
+# Model 1
 F1 Score: 2.0000
 Precision: 2.4000
 Recall: 1.7143
 
-# 2: Train on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz
+# Model 2
 F1 Score: 1.4667
 Precision: 1.3750
 Recall: 1.5714
 
-# 3: Train on nq-train-00-XX.jsonl.gz and nq-val-00.jsonl.gz
+# Model 3; Final Model
 F1 Score: 
 Precision: 
 Recall:
     
 # Instructions to replicate these Results
+All Hyperparameters are in run.ipynb and in the writeup. 
 
+# Preliminary Model 1
+Trained on nq-train-00.jsonl.gz and nq-val-00.jsonl.gz. Just run all the cells but just on one training file. Results will most likely be similar. Training time took about 1 to 1.5 hours.
+
+# Preliminary Model 2
+Trained on nq-train-simplified.jsonl.gz and nq-val-simplified.jsonl.gz. This will require changing the input to convert_func to be val=False for training only as document_html 
+doesn't exist. This was trained for about 7 hours but the results were poor because document html exists in validation and lot of information was lost in training. 
+
+# Model 3; Final Model
+Just run all the cells in the jupyter notebook run.ipynb. This will run 6 training files and 1 validation file. The training took about 9 hours 
 
 # Writeup
 Please take a look at the repo and read writeup.pdf
 
 # Opinion and Suggestions
 I really enjoyed the assignment because developing sufficient models that extract answers from entire page of content verus paragraphs is relatively a new problem in the field. I haven't dealt with something at this scale that needs to be robust. I learned a lot primarily from reading a lot of tensorflow code that can be translated to pytorch. Additionally, I learned how I effective I must be in having an efficient data pipeline. Laslty, it prompted me to gauge the improtance in distrbuted models. I love how that problem was open-ended and I didn't have to reimplement architechture based on a particular research paper. I don't have to many suggestions as this was open ended problem and that is the best aspect of it.
-
 
 # Favorite Charity
 Link: https://www.10000degrees.org/
